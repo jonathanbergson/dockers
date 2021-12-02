@@ -1,0 +1,12 @@
+# sudo docker-compose up
+
+version: '3'
+
+services:
+  golang-script:
+    container_name: golang-script
+    image: golang
+    working_dir: /usr/src/app
+    command: [ "go", "run", "main.go" ]
+    volumes:
+      - ./:/usr/src/app
