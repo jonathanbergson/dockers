@@ -7,6 +7,6 @@ services:
     container_name: run-dotnet-script
     image: bitnami/dotnet
     working_dir: /usr/src/app
-    command: [ "echo", "HELLO WORLD" ]
+    command: [ "dotnet", "run" ]
     volumes:
       - ./:/usr/src/app
