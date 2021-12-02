@@ -1,0 +1,12 @@
+# sudo docker-compose up
+
+version: '3'
+
+services:
+  dotnet-script:
+    container_name: run-dotnet-script
+    image: bitnami/dotnet
+    working_dir: /usr/src/app
+    command: [ "echo", "HELLO WORLD" ]
+    volumes:
+      - ./:/usr/src/app

@@ -3,10 +3,10 @@
 version: '3'
 
 services:
-  golang-script:
-    container_name: run-golang-script
-    image: golang
+  node-script:
+    container_name: run-ruby-script
+    image: node
     working_dir: /usr/src/app
-    command: [ "go", "run", "main.go" ]
+    command: [ "node", "main.js" ]
     volumes:
       - ./:/usr/src/app
