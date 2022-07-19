@@ -1,2 +1,2 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello World, .NET!");
+Console.WriteLine("Hello World, main .NET!");
